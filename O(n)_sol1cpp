@@ -2,7 +2,7 @@
 #include "Myutilities.h"
 using namespace std;
 int maxSubArray(vector<int>& nums) {
-    int maxSum =nums[0],cs=nums[0];
+    int maxSum =nums[0],cs=nums[0]; //cs stands for current sum
     for (int i = 1; i < nums.size(); i++) {
         cs=max(cs+nums[i],nums[i]);
         maxSum=max(maxSum,cs);
